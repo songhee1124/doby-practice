@@ -1,0 +1,136 @@
+.icon{
+    display:inline-block;
+    width:var(--icon-size-1);
+    height: var(--icon-size-1);
+    background-size:var(--icon-size-1);
+
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    border:none;
+    background-color: transparent; 
+    /* background-color: aqua; */
+    /* 투명화 */
+}
+
+
+.icon::before{
+    content:'';
+    display:inline-block; 
+    width:inherit; 
+    height:inherit;
+   
+    /* vertical-align:text-bottom;  */
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size:inherit;
+    mask-size:inherit;
+    /* background-color: transparent;  */
+    background-color: var(--color-base-4);
+    /* background-color: blueviolet; */
+
+}
+
+
+/* ============= color==================== */
+.icon-color\:base-8::before{
+    background-color: var(--color-base-8);  
+}
+
+
+
+/* =========== size ======================= */
+.icon-size-0 {
+    width: var(--icon-size-0);
+    height: var(--icon-size-0);
+    -webkit-mask-size: var(--icon-size-0);
+    mask-size: var(--icon-size-0);
+}
+
+.icon-size-1 {
+    width: var(--icon-size-1);
+    height: var(--icon-size-1);
+    -webkit-mask-size: var(--icon-size-1);
+    mask-size: var(--icon-size-1);
+}
+
+.icon-size-2 {
+    width: var(--icon-size-2);
+    height: var(--icon-size-2);
+    -webkit-mask-size: var(--icon-size-2);
+    mask-size: var(--icon-size-2);
+}
+
+.icon-size-3 {
+    width: var(--icon-size-3);
+    height: var(--icon-size-3);
+    -webkit-mask-size: var(--icon-size-3);
+    mask-size: var(--icon-size-3);
+}
+
+.icon-size-4 {
+    width: var(--icon-size-4);
+    height: var(--icon-size-4);
+    -webkit-mask-size: var(--icon-size-4);
+    mask-size: var(--icon-size-4);
+}
+
+
+/* ================ icon svg ===================== */
+.icon-kakao:before{
+    -webkit-mask-image:url(/image/kakao.svg);
+        mask-image:url(/image/kakao.svg);
+    }
+
+.icon-google:before{
+    -webkit-mask-image:url(/image/google.svg);
+        mask-image:url(/image/google.svg);
+    }
+.icon-naver:before{
+    -webkit-mask-image:url(/image/naver.svg);
+        mask-image:url(/image/naver.svg);
+    }
+
+.icon-login-doby:before{
+    -webkit-mask-image:url(/image/login-doby.svg);
+        mask-image:url(/image/login-doby.svg);        
+    }
+.icon-warning::before{
+    -webkit-mask-image:url(/image/warning.svg);
+    mask-image:url(/image/warning.svg);
+    -webkit-mask-position: center;
+}
+    /* 마스크는 백그라운드보다 밑이라 안됨?? */
+.icon-chat:before{
+    -webkit-mask-image:url(/image/chat.svg);
+        mask-image:url(/image/chat.svg);
+        -webkit-mask-position: center;        
+    }
+.icon-good:before{
+    -webkit-mask-image:url(/image/good.svg);
+        mask-image:url(/image/good.svg);
+        -webkit-mask-position: center;        
+    }
+.icon-views:before{
+    -webkit-mask-image:url(/image/views.svg);
+        mask-image:url(/image/views.svg);  
+        -webkit-mask-position:center;      
+    }
+
+   
+@media (min-width:700px) {
+    /* .md\:icon{
+        width:var(--icon-size-2);
+        height: var(--icon-size-2);
+        background-size:var(--icon-size-2);
+      }   */
+
+  .md\:icon-size-4 {
+    width:var(--icon-size-4);
+    height: var(--icon-size-4);
+    -webkit-mask-size : var(--icon-size-4);
+    mask-size: var(--icon-size-4); 
+    }
+  
+}
+

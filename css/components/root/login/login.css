@@ -1,0 +1,231 @@
+body{
+    justify-content: center;
+    align-items: center;
+}
+/* =====전체 구조잡는 부분======= */
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-logo{
+    display: inline-block;
+    width: 180px;
+    height: 80px;
+    text-indent: -9999px;
+    background-image: url(/image/login-doby.svg);
+    background-repeat: no-repeat;
+}
+
+/* ====== oauth 박스 전체 너비 설정 ========= */
+.login-icon-box{
+    width: 330px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* ========= oauth 전체 구조 설정 =========== */
+.login-icon{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+  }
+
+  /* ========== oauth 버튼 가운데 정렬 ========== */
+.login-icon li{  
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ==========  content 전체 구조 설정 =========== */
+.login-content-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+
+/* ========= 로그인 양 옆 선 구성 ============= */
+.login-content{
+    display: flex;
+    flex-basis: 40px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-base-7);
+    font-size: var(--font-m-size-1);
+    margin: 0px 0px 20px 0px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.login-content::before{
+    content: "";
+    flex-grow: 0;
+    flex-basis: 60px; 
+    /* 양쪽 선 길이 조절하는것 */
+    background-color: var(--color-base-7);
+    font-size: 0px;
+    height: 0.5px;
+    line-height: 0px;
+    margin: 0px 15px;
+}
+
+.login-content::after{
+    content: "";
+    flex-grow: 0;
+    flex-basis: 60px;
+    background-color: var(--color-base-7);
+    font-size: 0px;
+    height: 0.5px;
+    line-height: 0px;
+    margin: 0px 15px;
+    
+}
+
+
+/* ========= 입력폼 구조 설정 & 입력폼 내용 ==============  */
+.content-box{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    padding: 0;
+}
+
+
+.content{
+    display:inline-block;
+    /* text-align: center; */
+    font-size:var(--font-m-size-1);
+    font-weight: bold;
+   
+    margin: 15px 0px 15px 15px;
+}
+
+.email{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+   background-color: var(--color-base-0);
+   text-indent:15px ;
+    font-size: var(--font-m-size-1);
+   margin-bottom: 15px;
+    
+}
+
+.password{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+   background-color: var(--color-base-0);
+    text-indent:15px ;
+    font-size:var(--font-m-size-1);
+    margin-bottom: 30px;
+    
+}
+
+
+/* =========== 회원가입 & 계정찾기 ============= */
+.join-content{
+    display: flex;
+    /* align-items:center; */
+    justify-content: center;
+    font-size: var(--font-m-size-1);
+    font-weight: bold;
+    color: var(--color-base-7);
+    margin: 20px 0px 10px 0px;
+}
+
+
+.join-account{
+    display:flex;
+    justify-content: center;
+    font-size:12px;
+    color:var(--color-base-5);      
+}
+
+.join-link{
+    color:var(--color-base-5);     
+    text-decoration-line: none;
+    padding-right:20px;
+}
+
+.find-account{
+    color:var(--color-base-5);    
+    text-decoration-line: none; 
+    padding-left: 20px;
+}
+
+
+.d\:none{
+    display: none;
+}
+
+@media(min-width:700px){
+    .md\:login-icon-box{
+        width: 500px;
+        margin: 40px 0px 40px 0px;
+    }
+
+    .md\:icon-logo{
+        width: 300px;
+        height: 150px;
+        background-size: 300px 150px;
+      
+    }
+
+    .md\:login-content{
+        font-size: 18px;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .md\:login-content::before{
+        flex-basis: 115px; 
+        margin: 0px 30px;
+    }
+    
+    .md\:login-content::after{
+        flex-basis: 115px; 
+        margin: 0px 30px;
+    }
+
+    .md\:content{
+        font-size: 18px;
+        margin: 15px 0px 20px 15px;
+    }
+
+    .md\:email{
+        width: 500px;
+        height: 50px;
+        text-indent:25px ;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .md\:password{
+        width: 500px;
+        height: 50px;
+        text-indent:25px ;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .md\:join-content{
+        font-size: 20px;
+        margin: 30px 0px 15px 0px;
+    }
+    .md\:join-account{
+        font-size:18px;
+    }
+}
