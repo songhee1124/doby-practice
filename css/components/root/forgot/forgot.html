@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/root.css" rel="stylesheet" type="text/css">
-    <link href="/css/utils.css" rel="stylesheet" type="text/css">
-    <link href="/css/icon.css" rel="stylesheet" type="text/css">
-    <link href="/css/components/root/login/login-btn/login-button.css" rel="stylesheet" type="text/css">
-    <link href="/css/components/root/login/login.css" rel="stylesheet" type="text/css">
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/root.css" rel="stylesheet" type="text/css" />
+    <link href="/css/utils.css" rel="stylesheet" type="text/css" />
+    <link href="/css/icon.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/components/root/login/login-btn/login-button.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/css/components/root/login/login.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- <link href="/css/components/root/login/login.css" rel="stylesheet" type="text/css"> -->
-    <link href="/css/components/root/forgot/forgot.css" rel="stylesheet" type="text/css">
-
-</head>
-<body>
+    <link
+      href="/css/components/root/forgot/forgot.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
     <section>
-        <h1 class="d:none">계정찾기</h1>
+      <h1 class="d:none">계정찾기</h1>
 
-        <div class="forgot-box">
-            <div class="logo-box">
-                <a class="icon-logo md:icon-logo" href="">메인화면돌아가기</a>    
-            </div>  
-
-            <div>
-                <span class="find-account-content">계정찾기</span>
-            </div> 
-
-            <div class="find-account-box md:find-account-box">
-                <span>계정을 분실하셨나요?</span>
-                <span>회원가입시 입력하신 이메일주소를 입력해주세요.</span>
-                <span>해당 이메일로 아이디 및 비밀번호 변경 링크를<br> 보내드립니다.</span>
-            </div>
-
-
-            <div class="forgot-cancel-box">
-                <form class="email-box" >
-                    <fieldset>
-                        <legend class="d:none">이메일계정찾기 </legend>
-                            <label for="email">이메일 주소</label>
-                            <input class="email md:email" type="email" name="email" placeholder="이메일을 입력해주세요">
-                            <output class="email-check md:email-check deco icon-warning md:deco">이메일 주소가 정확한지 확인해주세요.</output>
-                        
-                        <div class="btn-forgot-box md:btn-forgot-box">
-                            <input class="btn-email md:btn-email" type="submit" value="계정찾기">
-                            <a class="btn-cancel md:btn-cancel" href="">취소</a>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            
+      <div class="forgot-box">
+        <div class="logo-box">
+          <a class="icon-logo md:icon-logo" href="">메인화면돌아가기</a>
         </div>
+
+        <div>
+          <span class="find-account-content">계정찾기</span>
+        </div>
+
+        <div class="find-account-box md:find-account-box">
+          <span>계정을 분실하셨나요?</span>
+          <span>회원가입시 입력하신 이메일주소를 입력해주세요.</span>
+          <span
+            >해당 이메일로 아이디 및 비밀번호 변경 링크를<br />
+            보내드립니다.</span
+          >
+        </div>
+
+        <!-- <div class="forgot-cancel-box"> -->
+        <form class="email-box">
+          <fieldset class="email-fieldset">
+            <legend class="d:none">이메일계정찾기</legend>
+            <label class="content md:content" for="email">이메일 주소</label>
+            <input
+              class="email md:email"
+              type="email"
+              name="email"
+              placeholder="이메일을 입력해주세요"
+            />
+            <output class="email-check md:email-check deco icon-warning md:deco"
+              >이메일 주소가 정확한지 확인해주세요.</output
+            >
+
+            <div class="btn-forgot-box md:btn-forgot-box">
+              <input
+                class="btn-email md:btn-email"
+                type="submit"
+                value="계정찾기"
+              />
+              <a class="btn-cancel md:btn-cancel" href="">취소</a>
+            </div>
+          </fieldset>
+        </form>
+        <!-- </div> -->
+      </div>
     </section>
-</body>
+  </body>
 </html>
