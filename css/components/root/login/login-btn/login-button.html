@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/root.css" rel="stylesheet" type="text/css">
-    <link href="/css/utils.css" rel="stylesheet" type="text/css">
-    <link href="/css/icon.css" rel="stylesheet" type="text/css">
-    <link href="/css/components/root/login/login-btn/login-button.css" rel="stylesheet" type="text/css">
-    <link href="/css/components/root/login/login.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/root.css" rel="stylesheet" type="text/css" />
+    <link href="/css/utils.css" rel="stylesheet" type="text/css" />
+    <link href="/css/icon.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/components/root/login/login-btn/login-button.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/css/components/root/login/login.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
     <section>
-        <h1 class="d:none">로그인 버튼 종류들</h1>
+      <h1 class="d:none">로그인 버튼 종류들</h1>
+      <div>
+        <ul class="login-icon">
+          <li>
+            <button
+              class="btn-icon icon icon-kakao icon-color:base-8 icon-size:1 md:btn-icon md:icon-size:2"
+            ></button>
+          </li>
+          <li>
+            <button
+              class="btn-icon icon icon-google icon-color:base-8 icon-size:1 md:btn-icon md:icon-size:2"
+            ></button>
+          </li>
+          <li>
+            <button
+              class="btn-icon icon icon-naver icon-color:base-8 icon-size:1 md:btn-icon md:icon-size:2"
+            ></button>
+          </li>
+        </ul>
+      </div>
 
-            <!-- <a class="icon-logo" href=""><img src="/image/login-doby.svg" class="icon icon-size:3">도비 로그인 화면</a> -->
-            <!-- <a class="icon icon-login-doby icon-size:3" href="">도비 로그인 화면</a> -->
-
-            <div>
-                <ul class="login-icon">
-                    <li>
-                    <button class="btn-icon icon icon-kakao icon-color:base-8 icon-size:1 md:btn-icon md:icon-size:2"></button>
-                    <!-- <button class="btn-icon">버튼<i class="icon icon-kakao icon-color:base-8 icon-size:1">카카오</i></button>
-                    아이콘이랑 구분짓고 싶어서 이렇게 했더니 안됨
-                    <button class="btn-icon">버튼</button> -->
-                    </li>
-                    <li><button class="btn-icon icon icon-google icon-color:base-8 icon-size:1 md:btn-icon md:icon-size:2"></button></li>
-                    <li><button class="btn-icon icon icon-naver icon-color:base-8 icon-size:1 md:btn-icon md:icon-size:2"></button></li>
-                </ul>
-            </div>
-
-            <div class="btn-login-box">
-                <button class="btn-login md:btn-login">로그인</button>
-            </div>
-
-    </section>      
-</body>
+      <div class="btn-login-box">
+        <button class="btn-login md:btn-login">로그인</button>
+      </div>
+    </section>
+  </body>
 </html>

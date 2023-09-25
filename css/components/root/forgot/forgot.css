@@ -1,13 +1,10 @@
-body {
-  justify-content: center;
-}
-
 .forgot-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 100px;
 }
 
 /* .logo-box{
@@ -136,7 +133,7 @@ body {
   justify-content: center;
 }
 .btn-email {
-  width: 50%;
+  width: 150px;
   height: 40px;
   border-radius: 50px;
   border: none;
@@ -152,7 +149,7 @@ body {
 
 .btn-cancel {
   display: flex;
-  width: 50%;
+  width: 150px;
   height: 40px;
   border-radius: 50px;
   border: 1px solid;

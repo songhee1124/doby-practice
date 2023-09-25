@@ -1,10 +1,6 @@
 .d\:none {
   display: none;
 }
-body {
-  display: flex;
-  justify-content: center;
-}
 
 /* --------- 전체 구조잡는 부분 ----------- */
 .login-box {
@@ -12,16 +8,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
+  margin-top: 100px;
 }
 
 /* --------- 로고 ----------- */
 .icon-logo {
   display: inline-block;
-  width: 180px;
+  width: 190px;
   height: 80px;
   text-indent: -9999px;
-  background-image: url(/image/login-doby.svg);
+  background-image: url(/icon/login-doby.svg);
   background-repeat: no-repeat;
 }
 
