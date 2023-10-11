@@ -27,7 +27,7 @@
     />
   </head>
   <body>
-    <main>
+    <main class="forgot-page">
       <section>
         <h1 class="d:none">계정찾기</h1>
 
@@ -52,19 +52,21 @@
           <!-- <div class="forgot-cancel-box"> -->
           <form class="email-box">
             <fieldset class="email-fieldset">
-              <legend class="d:none">이메일계정찾기</legend>
-              <label class="content md:content" for="email">이메일 주소</label>
-              <input
-                class="email md:email"
-                type="email"
-                name="email"
-                placeholder="이메일을 입력해주세요"
-              />
-              <output
-                class="email-check md:email-check deco icon-warning md:deco"
-                >이메일 주소가 정확한지 확인해주세요.</output
-              >
-
+              <legend class="d:none">계정찾기</legend>
+              <label class="content md:content" for="email"
+                >이메일 주소
+                <input
+                  class="email md:email"
+                  type="email"
+                  name="email"
+                  placeholder="이메일을 입력해주세요"
+              /></label>
+              <div class="div-output">
+                <output
+                  class="email-check md:email-check forgot-deco icon-warning"
+                  >이메일 주소가 정확한지 확인해주세요.</output
+                >
+             </div>
               <div class="btn-forgot-box md:btn-forgot-box">
                 <input
                   class="btn-email md:btn-email"

@@ -3,12 +3,19 @@
 }
 
 /* --------- 전체 구조잡는 부분 ----------- */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .login-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  /* margin-top: 100px;
+  margin-bottom: 100px; */
 }
 
 /* --------- 로고 ----------- */
@@ -45,26 +52,26 @@
   justify-content: center;
   flex-basis: 30px;
   color: var(--color-base-7);
-  font-size: var(--font-m-size-1);
-  font-weight: bold;
+  font-size: var(--font-size-2);
+  font-weight: 600;
   width: 100%;
-  margin: 30px 0px 20px 0px;
+  margin: 30px 0px 30px 0px;
 }
 
 .login-content::before {
   content: "";
   flex-grow: 0;
   width: 20%;
-  height: 0.5px;
-  background-color: var(--color-base-7);
+  height: 1px;
+  background-color: var(--color-base-4);
   margin: 0px 15px;
 }
 .login-content::after {
   content: "";
   flex-grow: 0;
   width: 20%;
-  height: 0.5px;
-  background-color: var(--color-base-7);
+  height: 1px;
+  background-color: var(--color-base-4);
   margin: 0px 15px;
 }
 
@@ -76,16 +83,17 @@
   width: 80%;
 }
 .login-form-box {
-  width: 90%;
+  width: 100%;
 }
 
 .content {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  font-size: var(--font-m-size-1);
-  font-weight: bold;
-  margin: 10px 0px 15px 15px;
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  text-indent: 10px;
+  /* margin: 10px 0px 15px 15px; */
 }
 
 .email {
@@ -94,9 +102,11 @@
   border-radius: 15px;
   border: none;
   background-color: var(--color-base-0);
-  font-size: var(--font-m-size-1);
-  text-indent: 15px;
-  margin-bottom: 10px;
+  font-size: var(--font-size-2);
+  padding: 20px;
+  margin-top: 10px;
+
+  margin-bottom: 25px;
 }
 .password {
   width: 100%;
@@ -104,8 +114,9 @@
   border-radius: 15px;
   border: none;
   background-color: var(--color-base-0);
-  font-size: var(--font-m-size-1);
-  text-indent: 15px;
+  font-size: var(--font-size-2);
+  padding: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
@@ -113,8 +124,8 @@
 .join-content {
   display: flex;
   justify-content: center;
-  font-size: var(--font-m-size-1);
-  font-weight: bold;
+  font-size: var(--font-size-2);
+  font-weight: 600;
   color: var(--color-base-7);
   margin: 20px 0px 10px 0px;
 }
@@ -138,6 +149,17 @@
   padding-left: 20px;
 }
 
+.email::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-base-2);
+}
+
+.password::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-base-2);
+}
 @media (min-width: 700px) {
   .md\:login-icon-box {
     width: 500px;
@@ -145,9 +167,9 @@
   }
 
   .md\:icon-logo {
-    width: 300px;
-    height: 150px;
-    background-size: 300px 150px;
+    width: 285px;
+    height: 120px;
+    background-size: 285px 120px;
   }
 
   .md\:login-content {
@@ -168,35 +190,36 @@
   .login-form-box {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     width: 500px;
   }
   .md\:content {
-    font-size: 18px;
-    margin: 15px 0px 20px 15px;
+    font-size: 16px;
+    text-indent: 20px;
+    /* margin: 15px 0px 20px 15px; */
   }
 
   .md\:email {
-    width: 500px;
+    width: 450px;
     height: 50px;
-    text-indent: 25px;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 
   .md\:password {
-    width: 500px;
+    width: 450px;
     height: 50px;
-    text-indent: 25px;
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    /* margin-bottom: 50px; */
   }
   .md\:join-content {
-    font-size: 20px;
+    font-size: 18px;
     margin: 30px 0px 15px 0px;
   }
   .md\:join-account {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

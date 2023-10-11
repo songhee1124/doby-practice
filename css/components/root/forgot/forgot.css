@@ -1,10 +1,14 @@
+.forgot-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .forgot-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 100px;
 }
 
 /* .logo-box{
@@ -19,7 +23,7 @@
 .find-account-content {
   display: flex;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--color-base-7);
   justify-content: center;
   align-items: center;
@@ -34,7 +38,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: var(--font-m-size-2);
+  font-size: var(--font-size-2);
   /* 폰트 사이즈 16px */
   margin-top: 30px;
 }
@@ -62,7 +66,7 @@
   display: flex;
   /* flex-direction: column; */
   padding: 0;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   justify-content: center;
 }
 
@@ -77,9 +81,10 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  font-size: var(--font-m-size-1);
-  font-weight: bold;
-  margin: 15px 0px 15px 15px;
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  text-indent: 10px;
+  margin: 30px 0px 0px 0px;
 }
 /* .email-box label {
   display: flex;
@@ -95,30 +100,42 @@
   border-radius: 15px;
   border: none;
   background-color: var(--color-base-0);
-  text-indent: 15px;
-  font-size: var(--font-m-size-1);
-  margin: 0;
-}
+  padding: 20px;
+  font-size: var(--font-size-1);
 
+  margin: 10px 00px 0px 0px;
+}
+.email::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-base-2);
+}
 .email-check {
-  display: flex;
+  display: none;
   /* justify-content:l; */
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: 35px;
+  margin-top: 10px;
   margin-left: 15px;
-  font-size: var(--font-m-size-0);
+  font-size: var(--font-size-0);
   color: var(--color-accent-0);
 }
 
-.deco::before {
+.div-output{
+  display: flex;
+
+}
+.email-check.active {
+  display: flex;
+  
+}
+
+.forgot-deco::before {
   content: "";
   display: inline-flex;
   width: var(--icon-size-1);
   height: var(--icon-size-1);
   /* background-image: url(/image/icon/settings.svg);  
     background-size:inherit; 배경 사이즈 */
-  /* vertical-align:auto;  이거 뭐지???? */
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: inherit;
@@ -131,11 +148,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 .btn-email {
-  width: 150px;
+  width: 130px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
   background-color: rgba(250, 204, 87, 0.45);
   font-size: 18px;
@@ -147,15 +165,19 @@
   background-color: var(--color-main-3);
 }
 
+.btn-email.active:hover {
+  cursor: pointer;
+}
+
 .btn-cancel {
   display: flex;
-  width: 150px;
+  width: 130px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 15px;
   border: 1px solid;
   background-color: var(--color-base-white);
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--color-base-5);
   justify-content: center;
   align-items: center;
@@ -169,49 +191,52 @@
     width: 500px;
   }
   .md\:find-account-box {
-    font-size: var(--font-d-size-1);
+    font-size: var(--font-size-4);
   }
 
+  .email-box {
+   width: 450px;
+  }
   .email-fieldset {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    width: 500px;
+    width: 90%;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* width: 500px; */
   }
   .md\:content {
     font-size: 18px;
-    margin: 15px 0px 20px 15px;
+    /* margin: 15px 0px 20px 15px; */
   }
   .md\:email {
-    width: 500px;
+    width: 450px;
     height: 50px;
-    text-indent: 25px;
-    font-size: 18px;
-    margin: 0;
+    font-size: 16px;
+    margin-top: 15px;
   }
   .md\:email-check {
-    display: flex;
-    margin-bottom: 50px;
-    font-size: var(--font-d-size-0);
-    color: var(--color-accent-0);
+    display: none;
+    font-size: var(--font-size-3);
+    margin-top: 15px;
   }
 
   .btn-forgot-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 450px;
   }
   .md\:btn-email {
     width: 200px;
     height: 50px;
-    font-size: var(--font-d-size-2);
-    margin-right: 30px;
+    font-size: 20px;
+    margin-right: 20px;
   }
   .md\:btn-cancel {
     width: 200px;
     height: 50px;
-    font-size: var(--font-d-size-2);
+    font-size: 20px;
   }
 }

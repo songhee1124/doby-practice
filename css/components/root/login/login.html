@@ -22,27 +22,32 @@
     />
   </head>
   <body>
-    <main>
+    <main class="login-page">
       <section>
+        <h1 class="d:none">로그인 페이지</h1>
         <div class="login-box">
-          <a class="icon-logo md:icon-logo" href="">메인화면돌아가기</a>
-
+          <div class="d:inline-block">
+            <a class="icon-logo md:icon-logo" href="">메인화면돌아가기</a>
+          </div>
           <div class="login-icon-box md:login-icon-box">
             <ul class="login-icon">
               <li>
-                <button
-                  class="btn-icon icon icon-kakao icon-color:base-8 icon-size-2 md:btn-icon md:icon-size-4 btn-hover"
-                ></button>
+                <a
+                  class="btn-icon icon icon-kakao icon-color-3 icon-size-1 md:btn-icon md:icon-size-2 btn-hover"
+                  href=""
+                ></a>
               </li>
               <li>
-                <button
-                  class="btn-icon icon icon-google icon-color:base-8 icon-size-2 md:btn-icon md:icon-size-4 btn-hover"
-                ></button>
+                <a
+                  class="btn-icon icon icon-google icon-color-3 icon-size-1 md:btn-icon md:icon-size-2 btn-hover"
+                  href=""
+                ></a>
               </li>
               <li>
-                <button
-                  class="btn-icon icon icon-naver icon-color:base-8 icon-size-2 md:btn-icon md:icon-size-4 btn-hover"
-                ></button>
+                <a
+                  class="btn-icon icon icon-naver icon-color-3 icon-size-1 md:btn-icon md:icon-size-2 btn-hover"
+                  href=""
+                ></a>
               </li>
             </ul>
           </div>
@@ -57,19 +62,21 @@
             <fieldset class="login-form-box">
               <legend class="d:none">로그인</legend>
 
-              <label class="content md:content" for="">이메일</label>
-              <input
-                class="email md:email"
-                type="email"
-                placeholder="이메일을 입력해주세요"
-              />
+              <label class="content md:content" for=""
+                >이메일
+                <input
+                  class="email md:email"
+                  type="text"
+                  placeholder="이메일을 입력해주세요"
+              /></label>
 
-              <label class="content" for="">비밀번호</label>
-              <input
-                class="password md:password"
-                type="text"
-                placeholder="비밀번호를 입력해주세요"
-              />
+              <label class="content md:content" for=""
+                >비밀번호
+                <input
+                  class="password md:password"
+                  type="password"
+                  placeholder="비밀번호를 입력해주세요"
+              /></label>
 
               <div>
                 <button class="btn-login md:btn-login">로그인</button>

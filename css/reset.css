@@ -160,10 +160,13 @@ option {
   appearance: none;
 }
 
-form,
-fieldset,
-legend{
-    margin: 0px;
-    padding: 0px;
-    border: none;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 새로 추가한 reset */
+button {
+  all: unset;
 }

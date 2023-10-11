@@ -1,10 +1,9 @@
 .btn-icon {
-  width: 75px;
+  width: 70px;
   /* 100 패딩 39 */
   height: 50px;
   background-color: var(--color-base-white);
-  border-color: var(--color-base-4);
-  padding: 14px 27px;
+  border-color: var(--color-base-3);
   border-style: solid;
   border-width: 0.5px;
   border-radius: 10px;
@@ -20,6 +19,7 @@
   font-size: 18px;
   font-weight: bold;
   color: var(--color-base-white);
+  text-align: center;
 }
 
 .btn-hover:hover {
@@ -31,15 +31,17 @@
   background-color: var(--color-main-3);
 }
 
+.btn-login.active:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 700px) {
   .md\:btn-icon {
-    width: 110px;
-    /* 100 패딩 39 */
+    width: 100px;
     height: 60px;
-    padding: 15px 40px;
   }
   .md\:btn-login {
-    width: 500px;
+    width: 450px;
     height: 50px;
     font-size: 20px;
   }

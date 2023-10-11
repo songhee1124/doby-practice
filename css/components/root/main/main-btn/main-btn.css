@@ -1,0 +1,64 @@
+.main-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  -webkit-mask-size: 40px;
+  mask-size: 40px;
+
+  box-sizing: border-box;
+  /* 텍스트 숨김 처리 등 */
+  overflow: hidden;
+  padding: 0px;
+  border: none;
+}
+
+.main-icon::before {
+  content: "";
+  display: inline-block;
+  height: inherit;
+  width: inherit;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: inherit;
+  mask-size: inherit;
+
+  background-color: var(--color-base-white);
+}
+
+.main-btn {
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-main-2);
+  border-radius: 80px;
+}
+
+.main-btn-color\:main-0 {
+  background-color: var(--color-main-0);
+}
+
+.main-btn-color\:main-3 {
+  background-color: var(--color-main-3);
+}
+
+.main-btn-box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-btn-name {
+  font-size: var(--font-size-3);
+  color: var(--color-base-7);
+  font-weight: 600;
+  margin-top: 15px;
+}
